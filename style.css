@@ -1,0 +1,66 @@
+/* Card Container */
+#countriesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    font-size: 24px;
+    color: black;
+    margin: 0;
+}
+/*dark mode button*/
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: black;
+}
+
+body.dark-mode .header {
+    background-color: black;
+    color: #ffffff;
+}
+
+body.dark-mode .header-title {
+    color: white;
+}
+
+body.dark-mode .dark-mode-toggle {
+    color: white;
+}
